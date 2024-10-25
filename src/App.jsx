@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="font-fontSora">
       <Nav></Nav>
+      <Hero></Hero>
     </div>
   );
 }

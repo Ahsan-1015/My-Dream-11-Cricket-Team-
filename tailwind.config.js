@@ -5,7 +5,13 @@ export default {
     extend: {
       fontFamily: {
         fontSora: ['Sora'],
-        // Add more custom font families as needed
+      },
+      colors: {
+        dark2_subtitle: '#494949',
+
+        dark4_subtitle: '#737373',
+
+        primary_btn: '#E7FE29',
       },
     },
   },

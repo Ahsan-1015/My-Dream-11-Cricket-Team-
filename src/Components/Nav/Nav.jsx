@@ -13,30 +13,42 @@ function Nav() {
         {/* left sid image */}
         <div className="w-12 md:w-16 ">
           <a className="w-full" href="">
-            <img src="/src/assets/logo.png" alt="" />
+            <img src="logo.png" alt="" />
           </a>
         </div>
 
         {/* Desktop Menu */}
-        <div className="flex gap-10 items-center">
-          <div className="hidden sm:flex space-x-16 items-end">
-            <div className="flex gap-10">
-              <a href="#" className="text-gray-500 hover:text-gray-900  ">
+        <div className="flex gap-10 2xl:gap-20 items-center">
+          <div className="hidden sm:flex space-x-16  items-end">
+            <div className="flex gap-10 2xl:gap-14">
+              <a
+                href="#"
+                className="text-gray-500 hover:text-gray-900 2xl:text-2xl  "
+              >
                 Home
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900 ">
+              <a
+                href="#"
+                className="text-gray-500 hover:text-gray-900 2xl:text-2xl "
+              >
                 Fixture
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900 ">
+              <a
+                href="#"
+                className="text-gray-500 hover:text-gray-900 2xl:text-2xl "
+              >
                 Teams
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900 ">
+              <a
+                href="#"
+                className="text-gray-500 hover:text-gray-900 2xl:text-2xl "
+              >
                 Schedules
               </a>
             </div>
           </div>
 
-          <button className=" btn border p-2 px-4 rounded-lg flex space-x-1 items-center">
+          <button className="  border-2 p-2 2xl:p-4 px-4 2xl:px-6  rounded-lg flex space-x-1  items-center ">
             <p className="text-base lg:text-xl font-semibold "> 0 Coin</p>
             <img
               className="w-7"
