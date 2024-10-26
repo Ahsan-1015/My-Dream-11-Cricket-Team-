@@ -1,0 +1,152 @@
+[
+  {
+    "playerId": "P012",
+    "name": "Chris Gayle",
+    "country": "West Indies",
+    "image": "https://media.gettyimages.com/id/1168000276/photo/port-of-spain-trinidad-and-tobago-chris-gayle-of-the-west-indies-salutes-the-crowd-as-he.jpg?s=612x612&w=0&k=20&c=Dp6SCXW3NfXbJkbrHqR7DrXhqLrlTSoqaZaFa50k3l0=",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm off break",
+    "biddingPrice": "$2,500,000"
+  },
+  {
+    "playerId": "P001",
+    "name": "Rohit Sharma",
+    "country": "India",
+    "image": "https://media.gettyimages.com/id/1735634463/photo/ahmedabad-india-rohit-sharma-of-india-celebrates-after-the-teams-victory-during-the-icc-mens.jpg?s=612x612&w=0&k=20&c=fAllPwAGxtniquT1sMqX2V86XwcGaezbYXUXDijfp3k=",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Off spin",
+    "biddingPrice": "$2,500,000"
+  },
+  {
+    "playerId": "P002",
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "image": "https://media.gettyimages.com/id/1434021872/photo/brisbane-australia-quinton-de-kock-poses-during-the-south-africa-icc-mens-t20-cricket-world.jpg?s=612x612&w=0&k=20&c=QkUZid_IeTNvqre3OtJrXGRw8LQVENVwUvvLW6RGegA=",
+    "role": "Wicketkeeper",
+    "battingType": "Left-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$2,200,000"
+  },
+  {
+    "playerId": "P003",
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "image": "https://media.gettyimages.com/id/1765051938/photo/kolkata-india-mustafizur-rahman-of-bangladesh-during-the-icc-mens-cricket-world-cup-india.jpg?s=612x612&w=0&k=20&c=T7E8YW8D-qDfVzaFnpsP2pLg771Sg5h4CW6EfAamDZQ=",
+    "role": "Bowler",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm fast",
+    "biddingPrice": "$1,500,000"
+  },
+  {
+    "playerId": "P004",
+    "name": "Andre Russell",
+    "country": "West Indies",
+    "image": "https://media.gettyimages.com/id/2158350575/photo/gros-islet-saint-lucia-andre-russell-of-west-indies-celebrates-after-dismissing-moeen-ali-of.jpg?s=612x612&w=0&k=20&c=TlnPy4q4UUtCNFFZV7PlSsJxh48KibrifQ3S0Sk1YkU=",
+    "role": "All-rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast",
+    "biddingPrice": "$2,800,000"
+  },
+  {
+    "playerId": "P005",
+    "name": "Heinrich Klaasen",
+    "country": "South Africa",
+    "image": "https://media.gettyimages.com/id/1754046491/photo/mumbai-india-heinrich-klaasen-of-south-africa-makes-their-way-off-after-being-dismissed-for.jpg?s=612x612&w=0&k=20&c=7qAjQSjnjV07kCAJQAC4zZsJe_itZzTvi52zEXFoYyk=",
+    "role": "Wicketkeeper",
+    "battingType": "Right-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$1,300,000"
+  },
+  {
+    "playerId": "P006",
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "image": "https://media.gettyimages.com/id/2156804436/photo/new-york-new-york-jasprit-bumrah-of-india-celebrates-after-taking-the-wicket-of-babar-azam-of.jpg?s=612x612&w=0&k=20&c=g7MoLENe1rukcm5T4j9Z_0tJpVRaao0I7NF320gHNq4=",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast",
+    "biddingPrice": "$2,700,000"
+  },
+  {
+    "playerId": "P007",
+    "name": "Mitchell Starc",
+    "country": "Australia",
+    "image": "https://media.gettyimages.com/id/1248450922/photo/mumbai-india-mitchell-starc-of-australia-bowls-during-the-first-game-in-the-one-day.jpg?s=612x612&w=0&k=20&c=O9JtXdhguL84A_4BW_wc0xULhlMh0Ad-NuwVzL0XS8g=",
+    "role": "Bowler",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm fast",
+    "biddingPrice": "$2,900,000"
+  },
+  {
+    "playerId": "P008",
+    "name": "David Warner",
+    "country": "Australia",
+    "image": "https://media.gettyimages.com/id/461303808/photo/sydney-australia-david-warner-of-australia-poses-during-the-australian-2015-cricket-world-cup.jpg?s=612x612&w=0&k=20&c=S2Vs62KQCS03zK8IUQAONWwa-7SUXre-ikU6hKkyHUo=",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$2,600,000"
+  },
+  {
+    "playerId": "P009",
+    "name": "MS Dhoni",
+    "country": "India",
+    "image": "https://media.gettyimages.com/id/1258274976/photo/ahmedabad-india-captain-ms-dhoni-of-the-chennai-super-kings-after-their-victory-against.jpg?s=612x612&w=0&k=20&c=Kkuvphei2vuyPE8wRc80fpbH3gdf4fSvF5dUKG6vlCo=",
+    "role": "Wicketkeeper",
+    "battingType": "Right-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$3,000,000"
+  },
+  {
+    "playerId": "P010",
+    "name": "Lasith Malinga",
+    "country": "Sri Lanka",
+    "image": "https://media.gettyimages.com/id/483091973/photo/dhaka-bangladesh-lasith-malinga-of-sri-lanka-celebrates-his-teams-win-over-india-after-the-icc.jpg?s=612x612&w=0&k=20&c=s_HdfUyBXx_9HlF9RYPpaCkiopfqMeS8N-TIXHIxLtM=",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast",
+    "biddingPrice": "$2,200,000"
+  },
+  {
+    "playerId": "P011",
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://media.gettyimages.com/id/1434940895/photo/brisbane-australia-virat-kohli-poses-during-the-india-icc-mens-t20-cricket-world-cup-2022.jpg?s=612x612&w=0&k=20&c=ZjD3nTElUE05zfYDUeQ1_s8KogvDeNmDx1jm25OrAI4=",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Off spin",
+    "biddingPrice": "$3,200,000"
+  },
+  {
+    "playerId": "P013",
+    "name": "Sachin Tendulkar",
+    "country": "India",
+    "image": "",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm off break",
+    "biddingPrice": "$4,000,000"
+  },
+  {
+    "playerId": "P014",
+    "name": "Brian Lara",
+    "country": "West Indies",
+    "image": "",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm leg break",
+    "biddingPrice": "$3,800,000"
+  },
+  {
+    "playerId": "P015",
+    "name": "Ricky Ponting",
+    "country": "Australia",
+    "image": "",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm medium",
+    "biddingPrice": "$3,500,000"
+  }
+]
