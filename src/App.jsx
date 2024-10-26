@@ -10,7 +10,7 @@ import Footer from './Components/Footter/Footter';
 function App() {
   const [allPlayers, setAllPlayers] = useState([]);
 
-  // active toggle ber fun
+  // active toggle ber fun start
   const [isActive, setIsActive] = useState({
     available: true,
     status: 'available',
@@ -29,25 +29,50 @@ function App() {
       });
     }
   };
-  console.log(isActive);
 
+  // active toggle ber fun end
+
+  const [coin, setCoin] = useState(0);
+
+  const handleAddCoin = updateCoin => {
+    setCoin(coin + updateCoin);
+  };
+
+  // all data fetch
   useEffect(() => {
     fetch('playerInfo.json')
       .then(res => res.json())
       .then(data => setAllPlayers(data));
   }, []);
 
+  // selected start
+  const [selected, setSelected] = useState([]);
+  console.log(selected);
+
+  const handleSelected = selectedData => {
+    setSelected(selectedData);
+    const isExist = selected.find(
+      previousData => previousData.playerId === selectedData.playerId
+    );
+
+    if (!isExist) {
+      setSelected([...selectedData, selectedData]);
+    }
+  };
+  console.log(selected);
+
   return (
     <div className="font-fontSora">
-      <Nav></Nav>
-      <Hero></Hero>
+      <Nav coin={coin}></Nav>
+      <Hero handleAddCoin={handleAddCoin}></Hero>
 
       <AvailableContainer
+        selected={selected}
+        handleSelected={handleSelected}
+        allPlayers={allPlayers}
         isActive={isActive}
         handleIsActiveStatus={handleIsActiveStatus}
       ></AvailableContainer>
-
-      <MainContainer allPlayers={allPlayers}></MainContainer>
 
       <Footer></Footer>
     </div>

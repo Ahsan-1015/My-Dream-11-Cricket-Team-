@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Nav() {
+function Nav({ coin }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -49,7 +49,7 @@ function Nav() {
           </div>
 
           <button className="  border-2 p-2 2xl:p-3 px-4 2xl:px-6  rounded-lg flex space-x-1  items-center ">
-            <p className="text-base lg:text-xl font-semibold "> 0 Coin</p>
+            <p className="text-base lg:text-xl font-semibold ">{coin} $</p>
             <img
               className="w-7"
               src="https://img.icons8.com/?size=48&id=sPBQkuep9vDA&format=png"

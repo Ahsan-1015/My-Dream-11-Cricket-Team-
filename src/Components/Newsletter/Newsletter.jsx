@@ -2,7 +2,7 @@ import React from 'react';
 
 const Newsletter = () => {
   return (
-    <div className="w-11/12 2xl:w-10/12 mx-auto  absolute -bottom-44 left-3 md:left-8 lg:left-16 2xl:left-40  border-2 rounded-3xl p-4 bg-[#FFFFFF26] backdrop-blur-lg  ">
+    <div className="w-full mx-auto  absolute -bottom-44     border-2 rounded-3xl p-4 bg-[#FFFFFF26] backdrop-blur-lg  ">
       <section className=" bg-gradient-to-r from-blue-100 to-yellow-100 py-8 md:py-12 px-6 rounded-3xl ">
         <div className="max-w-4xl mx-auto text-center  rounded-lg py-10 px-6">
           <h2 className="text-2xl md:text-4xl font-bold">

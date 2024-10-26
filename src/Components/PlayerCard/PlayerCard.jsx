@@ -1,4 +1,5 @@
 const PlayerCard = ({
+  playerId,
   image,
   name,
   biddingPrice,
@@ -6,6 +7,7 @@ const PlayerCard = ({
   bowlingType,
   country,
   role,
+  handleSelected,
 }) => {
   return (
     <div className="bg-white shadow-lg rounded-lg overflow-hidden w-full p-5 border border-gray-200">
@@ -107,7 +109,21 @@ const PlayerCard = ({
 
           {/* Choose Player Button */}
           <div>
-            <button className=" border-2  text-black font-semibold p-2 rounded-md hover:bg-blue-600 transition duration-300">
+            <button
+              onClick={() =>
+                handleSelected([
+                  playerId,
+                  image,
+                  name,
+                  biddingPrice,
+                  battingType,
+                  bowlingType,
+                  country,
+                  role,
+                ])
+              }
+              className=" border-2  text-black font-semibold p-2 rounded-md hover:bg-blue-600 transition duration-300"
+            >
               Choose Player
             </button>
           </div>
