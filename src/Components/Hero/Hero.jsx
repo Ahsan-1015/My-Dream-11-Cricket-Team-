@@ -1,15 +1,16 @@
 import React from 'react';
 import HeroBtn from './HeroBtn';
+import './Hero.css';
 
 function Hero() {
   return (
-    <section className=" bg-[url('public/bg-shadow.png')]  bg-cover  bg-gray-950 rounded-2xl shadow-lg overflow-hidden w-11/12 2xl:w-10/12 mx-auto mt-5 py-4 2xl:py-24">
+    <section className=" bgImage bg-cover  bg-gray-950 rounded-2xl shadow-lg overflow-hidden w-11/12 2xl:w-10/12 mx-auto mt-5 py-4 2xl:py-14">
       <div className=" w-full lg:w-10/12 mx-auto px-1 py-16 flex flex-col justify-center items-center text-center">
         {/* Banner Image */}
         <img
-          src="public/banner-main.png"
+          src="banner-main.png"
           alt="Cricket Graphic"
-          className="w-32 lg:w-36 2xl:w-60 object-cover mb-8"
+          className="w-32 lg:w-36 2xl:w-48 object-cover mb-8"
         />
 
         {/* Banner Heading */}

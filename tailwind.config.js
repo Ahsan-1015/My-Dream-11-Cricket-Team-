@@ -13,6 +13,9 @@ export default {
 
         primary_btn: '#E7FE29',
       },
+      backgroundImage: {
+        hero_bg_img: "url('./public/bg-shadow.png')",
+      },
     },
   },
   plugins: [require('daisyui')],

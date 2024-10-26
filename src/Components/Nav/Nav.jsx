@@ -18,37 +18,37 @@ function Nav() {
         </div>
 
         {/* Desktop Menu */}
-        <div className="flex gap-10 2xl:gap-20 items-center">
+        <div className="flex gap-10 2xl:gap-16 items-center">
           <div className="hidden sm:flex space-x-16  items-end">
             <div className="flex gap-10 2xl:gap-14">
               <a
                 href="#"
-                className="text-gray-500 hover:text-gray-900 2xl:text-2xl  "
+                className="text-gray-500 hover:text-gray-900 2xl:text-xl  "
               >
                 Home
               </a>
               <a
                 href="#"
-                className="text-gray-500 hover:text-gray-900 2xl:text-2xl "
+                className="text-gray-500 hover:text-gray-900 2xl:text-xl "
               >
                 Fixture
               </a>
               <a
                 href="#"
-                className="text-gray-500 hover:text-gray-900 2xl:text-2xl "
+                className="text-gray-500 hover:text-gray-900 2xl:text-xl "
               >
                 Teams
               </a>
               <a
                 href="#"
-                className="text-gray-500 hover:text-gray-900 2xl:text-2xl "
+                className="text-gray-500 hover:text-gray-900 2xl:text-xl "
               >
                 Schedules
               </a>
             </div>
           </div>
 
-          <button className="  border-2 p-2 2xl:p-4 px-4 2xl:px-6  rounded-lg flex space-x-1  items-center ">
+          <button className="  border-2 p-2 2xl:p-3 px-4 2xl:px-6  rounded-lg flex space-x-1  items-center ">
             <p className="text-base lg:text-xl font-semibold "> 0 Coin</p>
             <img
               className="w-7"
