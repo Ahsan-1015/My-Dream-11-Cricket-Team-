@@ -1,4 +1,3 @@
-import React from 'react';
 import MainContainer from '../MainContainer/MainContainer';
 import Selected from '../Selected/Selected';
 
@@ -8,7 +7,10 @@ export default function AvailableContainer({
   allPlayers,
   handleSelected,
   selected,
+
+  handleDelete,
 }) {
+  // console.log(selected);
   return (
     <div className="w-11/12 2xl:size-10/12 mx-auto mt-5">
       {/* <div className="w-11/12 2xl:w-10/12 mx-auto flex justify-between gap-3 py-5 mt-10 items-center">
@@ -37,18 +39,22 @@ export default function AvailableContainer({
                 : 'text-xs md:text-base font-bold bg-primary_btn p-3  rounded-r-lg'
             }`}
           >
-            Selected {allPlayers.length}
+            Selected ({selected.length})
           </button>
         </p>
       </div>
-      {console.log(isActive.available)}
+      {/* {console.log(isActive.available)} */}
       {isActive.available ? (
         <MainContainer
           allPlayers={allPlayers}
           handleSelected={handleSelected}
         />
       ) : (
-        <Selected allPlayers={allPlayers} selected={selected} />
+        <Selected
+          allPlayers={allPlayers}
+          selected={selected}
+          handleDelete={handleDelete}
+        />
       )}
     </div>
     // </div>

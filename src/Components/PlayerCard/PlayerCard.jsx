@@ -1,14 +1,14 @@
 const PlayerCard = ({
-  playerId,
-  image,
-  name,
-  biddingPrice,
-  battingType,
-  bowlingType,
-  country,
-  role,
+  // eslint-disable-next-line react/prop-types
+  allPlayer,
+
+  // eslint-disable-next-line react/prop-types
   handleSelected,
 }) => {
+  // eslint-disable-next-line react/prop-types
+  const { image, name, biddingPrice, battingType, bowlingType, country, role } =
+    allPlayer;
+
   return (
     <div className="bg-white shadow-lg rounded-lg overflow-hidden w-full p-5 border border-gray-200">
       {/* Image Section */}
@@ -110,18 +110,7 @@ const PlayerCard = ({
           {/* Choose Player Button */}
           <div>
             <button
-              onClick={() =>
-                handleSelected([
-                  playerId,
-                  image,
-                  name,
-                  biddingPrice,
-                  battingType,
-                  bowlingType,
-                  country,
-                  role,
-                ])
-              }
+              onClick={() => handleSelected(allPlayer)}
               className=" border-2  text-black font-semibold p-2 rounded-md hover:bg-blue-600 transition duration-300"
             >
               Choose Player
