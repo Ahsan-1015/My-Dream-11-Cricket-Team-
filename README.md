@@ -1,9 +1,9 @@
-# Cricket Team Builder
+# Cricket Team Builder 🏏
 
 ## 🚀 Live Demo
 
 Check out the live preview of the Cricket Team Builder app
-[here](my-dream-eleven-team.surge.sh).
+[here](https://my-dream-eleven-team.surge.sh/)
 
 ---
 
@@ -14,11 +14,6 @@ and manage a custom cricket team by selecting players from a list. It uses
 virtual coins as currency, enabling users to add players to their team within a
 set coin limit. Players can be removed as needed, and the app provides real-time
 feedback with notifications.
-
-## 📸 Screenshots
-
-![App Screenshot 1](link_to_screenshot1.png)
-![App Screenshot 2](link_to_screenshot2.png)
 
 ## ✨ Key Features
 
@@ -141,7 +136,7 @@ for details.
 ### 💬 Contact
 
 For questions or feedback, please reach out via
-[Your Email Address](mailto:youremail@example.com).
+[ Email Address](aaaa.ahshanhabib@gmail.com).
 
 ---
 

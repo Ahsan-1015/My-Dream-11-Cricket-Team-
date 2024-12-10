@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Newsletter = () => {
   return (
     <div className="w-full mx-auto  absolute -bottom-44     border-2 rounded-3xl p-4 bg-[#FFFFFF26] backdrop-blur-lg  ">

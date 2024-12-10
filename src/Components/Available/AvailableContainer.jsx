@@ -1,5 +1,6 @@
 import MainContainer from '../MainContainer/MainContainer';
 import Selected from '../Selected/Selected';
+import PropTypes from 'prop-types';
 
 export default function AvailableContainer({
   handleIsActiveStatus,
@@ -7,17 +8,10 @@ export default function AvailableContainer({
   allPlayers,
   handleSelected,
   selected,
-
   handleDelete,
 }) {
-  // console.log(selected);
   return (
     <div className="w-11/12 2xl:size-10/12 mx-auto mt-5">
-      {/* <div className="w-11/12 2xl:w-10/12 mx-auto flex justify-between gap-3 py-5 mt-10 items-center">
-        <h1 className="text-lg md:text-2xl font-extrabold ">
-          Available Players ({allPlayers})
-        </h1> */}
-
       <div className="flex rounded-xl justify-end ">
         <p className="border-2 rounded-xl">
           <button
@@ -43,7 +37,6 @@ export default function AvailableContainer({
           </button>
         </p>
       </div>
-      {/* {console.log(isActive.available)} */}
       {isActive.available ? (
         <MainContainer
           allPlayers={allPlayers}
@@ -57,6 +50,29 @@ export default function AvailableContainer({
         />
       )}
     </div>
-    // </div>
   );
 }
+
+AvailableContainer.propTypes = {
+  handleIsActiveStatus: PropTypes.func.isRequired,
+  isActive: PropTypes.shape({
+    available: PropTypes.bool.isRequired,
+    status: PropTypes.string.isRequired,
+  }).isRequired,
+  allPlayers: PropTypes.arrayOf(
+    PropTypes.shape({
+      playerId: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      biddingPrice: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+  handleSelected: PropTypes.func.isRequired,
+  selected: PropTypes.arrayOf(
+    PropTypes.shape({
+      playerId: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      biddingPrice: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+  handleDelete: PropTypes.func.isRequired,
+};

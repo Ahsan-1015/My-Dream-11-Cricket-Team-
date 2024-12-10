@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 function Nav({ coin }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,64 +10,45 @@ function Nav({ coin }) {
 
   return (
     <nav>
-      <div className="w-11/12 2xl:w-10/12 mx-auto py-3  flex justify-between items-center mt-2 2xl:mt-5 lg:py-4">
-        {/* left sid image */}
-        <div className="w-12 md:w-16 ">
-          <a className="w-full" href="">
-            <img src="logo.png" alt="" />
+      <div className="w-11/12 2xl:w-10/12 mx-auto py-3 flex justify-between items-center mt-2 2xl:mt-5 lg:py-4">
+        <div className="w-12 md:w-16">
+          <a href="">
+            <img src="logo.png" alt="Logo" />
           </a>
         </div>
 
-        {/* Desktop Menu */}
         <div className="flex gap-10 2xl:gap-16 items-center">
-          <div className="hidden sm:flex space-x-16  items-end">
+          <div className="hidden sm:flex space-x-16 items-end">
             <div className="flex gap-10 2xl:gap-14">
-              <a
-                href="#"
-                className="text-gray-500 hover:text-gray-900 2xl:text-xl  "
-              >
-                Home
-              </a>
-              <a
-                href="#"
-                className="text-gray-500 hover:text-gray-900 2xl:text-xl "
-              >
-                Fixture
-              </a>
-              <a
-                href="#"
-                className="text-gray-500 hover:text-gray-900 2xl:text-xl "
-              >
-                Teams
-              </a>
-              <a
-                href="#"
-                className="text-gray-500 hover:text-gray-900 2xl:text-xl "
-              >
-                Schedules
-              </a>
+              {['Home', 'Fixture', 'Teams', 'Schedules'].map(item => (
+                <a
+                  key={item}
+                  href="#"
+                  className="text-gray-500 hover:text-gray-900 2xl:text-xl"
+                >
+                  {item}
+                </a>
+              ))}
             </div>
           </div>
 
-          <button className="  border-2 p-2 2xl:p-3 px-4 2xl:px-6  rounded-lg flex space-x-1  items-center ">
-            <p className="text-base lg:text-xl font-semibold ">{coin} $</p>
+          <button className="border-2 p-2 2xl:p-3 px-4 2xl:px-6 rounded-lg flex space-x-1 items-center">
+            <p className="text-base lg:text-xl font-semibold">{coin} $</p>
             <img
               className="w-7"
               src="https://img.icons8.com/?size=48&id=sPBQkuep9vDA&format=png"
-              alt=""
+              alt="Coin Icon"
             />
           </button>
         </div>
 
-        {/* Mobile Hamburger Menu Button */}
         <div className="sm:hidden items-center flex">
           <button
             onClick={toggleMenu}
             className="text-gray-700 focus:outline-none p-2 rounded-full border"
           >
-            {/* Icon for Hamburger Menu */}
             <svg
-              className="w-7 h-7 "
+              className="w-7 h-7"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -83,54 +65,28 @@ function Nav({ coin }) {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <nav className="sm:hidden bg-white shadow-md">
           <ul className="flex flex-col space-y-4 py-4">
-            <button className=" hover:btn">
-              <a
-                href="#"
-                className="block text-gray-700 hover:text-gray-900 text-center"
-              >
-                Home
-              </a>
-            </button>
-
-            <button className=" hover:btn">
-              <a
-                href="#"
-                className="block text-gray-700 hover:text-gray-900 text-center"
-              >
-                Fixture
-              </a>
-            </button>
-
-            <button className=" hover:btn">
-              <a
-                href="#"
-                className="block text-gray-700 hover:text-gray-900 text-center"
-              >
-                Teams
-              </a>
-            </button>
-
-            <button className=" hover:btn">
-              <a
-                href="#"
-                className="block text-gray-700 hover:text-gray-900 text-center"
-              >
-                Schedules
-              </a>
-            </button>
-
-            <button className=" hover:btn">
-              <a href="#"></a>
-            </button>
+            {['Home', 'Fixture', 'Teams', 'Schedules'].map(item => (
+              <li key={item}>
+                <a
+                  href="#"
+                  className="block text-gray-700 hover:text-gray-900 text-center"
+                >
+                  {item}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       )}
     </nav>
   );
 }
+
+Nav.propTypes = {
+  coin: PropTypes.number.isRequired,
+};
 
 export default Nav;
